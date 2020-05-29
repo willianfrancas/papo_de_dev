@@ -1,0 +1,96 @@
+body {
+  background: antiquewhite;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  
+  width: 250px;
+  height: 50px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  box-shadow: 0 5px 5px 0
+    rgba(0,0,0,.09), 0 8px 8px 0
+    rgba(0,0,0,.09);
+}
+
+label {
+  margin: 0 15px;
+  color: #949494;
+  width: 25px;
+}
+
+label:hover {
+  color: #6e6e6e;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio'] {
+  &:checked {
+    & + label {
+      color: #53dbc5
+    }
+  }
+}
+
+.selected-element {
+  margin: 0;
+  width: 55px;
+  height: 10px;
+
+  position: absolute;
+  left: 15px;
+  top: 37px;  
+
+  transition: 0.25s ease-out;
+  display: flex;
+  justify-content: center;
+}
+
+input[id='award'] {
+  &:checked {
+    & ~ .selected-element {
+      transform: translateX(100%);
+    }
+  }
+}
+
+input[id='briefcase'] {
+  &:checked {
+    & ~ .selected-element {
+      transform: translateX(200%);
+    }
+  }
+}
+
+input[id='book-open'] {
+  &:checked {
+    & ~ .selected-element {
+      transform: translateX(300%);
+    }
+  }
+}
+
+.circle {
+  margin: 0;
+  background: #53dbc5;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  align-self: center;
+}
