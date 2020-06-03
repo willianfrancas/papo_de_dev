@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/menu-microinteracoes/style.css">
+  <title>Menu - MicroInterações</title>
+</head>
+<body>
+    <nav>
+      <ul>
+        <li><a href="/microinteracoes.html">Menu MicroInterações</a></li>
+        <li><a href="/star-wars.html">Star Stars</a></li>
+      </ul>
+    </nav>
+
+  <main>
+    <div class="container">
+      <input type="radio" name="menu" id="home" checked>
+      <label for="home"><i data-feather="home"></i></label>
+      
+      <input type="radio" name="menu" id="award">
+      <label for="award"><i data-feather="award"></i></label>
+      
+      <input type="radio" name="menu" id="briefcase">
+      <label for="briefcase"><i data-feather="briefcase"></i></label>
+      
+      <input type="radio" name="menu" id="book-open">
+      <label for="book-open"><i data-feather="book-open"></i></label>
+      
+      <div class="selected-element">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </main>
+    
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script> -->
+  <script>
+    feather.replace()
+  </script>
+</body>
+</html>
