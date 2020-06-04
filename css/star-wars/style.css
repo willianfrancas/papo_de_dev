@@ -5,11 +5,16 @@
 
 main {
   width: 100%;
-  height: 60vw;
 }
 
 main ul {
   list-style: none;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main .lateral-menu {
@@ -68,7 +73,97 @@ main .lateral-menu .settings svg {
   margin-right: 2em;
 }
 
-main .container {
+main .content {
+  background: #f5f6fa;
+  width: 100%;
+}
+
+main .content .card {
+  background: #ffffff;
+  -webkit-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  margin: 0px 20px;
+  height: 132px;
+}
+
+main .content .card-small {
+  width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .content .card-large {
+  width: 464px;
+}
+
+main .content .card-large .card-container .card-content:first-child {
+  border-right: 3px solid #000;
+}
+
+main .content .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80%;
+  width: 100%;
+}
+
+main .content .card-content .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .content .card-content .card-info h2 {
+  font-size: 54px;
+  font-weight: bold;
+  color: #ffba33;
+}
+
+main .content .card-content .card-info p {
+  font-size: 16px;
+}
+
+main .content .card .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+main .content .cards-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+main .containerb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,7 +178,7 @@ main .container {
   /* Safari */
 }
 
-main .container .loader {
+main .containerb .loader {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

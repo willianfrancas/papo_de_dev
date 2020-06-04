@@ -6,10 +6,12 @@
 
 main {
   width: 100%;
-  height: 60vw;
   
   ul {
     list-style: none;
+  }
+  .container {
+    display: flex;
   }
 
   .lateral-menu {
@@ -47,10 +49,88 @@ main {
 
     .settings svg {
       margin-right: 2em;
+    }  
+  }
+  .content {
+    background: #f5f6fa;
+    width: 100%;
+    
+    .card {
+      background: #ffffff;
+      box-shadow: 4px 4px 15px rgba(0,0,0,0.25);
+      border-radius: 16px;
+      margin: 0px 20px;
+      height: 132px;
+    }
+
+    .card-small {
+      width: 240px;
+      
+      display: flex;
+      align-items: center;
+    }
+    .card-large {
+      width: 464px;
+
+      .card-container .card-content:first-child {
+        border-right: 3px solid #000;
+      }
+    }
+
+    .card-content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80%;
+      width: 100%;
+
+
+      .card-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        h2 {
+          font-size: 54px;
+          font-weight: bold;
+          color: #ffba33;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+
+    }
+
+    .card .card-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%
+    }
+
+    .cards-header {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
     }
   }
 
-  .container {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .containerb {
     display: flex;
     flex-direction: row;
     background: rgb(0,0,0);
