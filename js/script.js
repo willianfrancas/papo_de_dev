@@ -1,0 +1,1 @@
+window.location = "./star-wars.html"
