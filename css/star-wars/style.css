@@ -21,8 +21,9 @@ main .lateral-menu {
   background: #000;
   color: #fff;
   width: 250px;
-  height: 93vh;
+  height: 90vh;
   padding: 1.8em 0;
+  margin: 0;
   font-size: 1.2rem;
   font-weight: bold;
   display: -webkit-box;

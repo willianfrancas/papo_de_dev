@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 
-html {
-  // height:100vw;
+body {
+  min-height: 100vh;
   background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%);
 }
 
