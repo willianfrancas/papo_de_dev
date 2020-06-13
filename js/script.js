@@ -1,4 +1,3 @@
-console.log(window.document.title)
 if(window.document.title !== "Star Wars") {
   window.location = "./star-wars.html";
 }
